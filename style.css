@@ -1,5 +1,26 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} *//* Custom CSS for Search Bar and Results */
+
+.search-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#searchResults {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.result-item:last-child {
+    border-bottom: none;
 }
