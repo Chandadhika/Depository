@@ -5,8 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Depository</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <h1>Depository</h1>
+            <nav class="nav">
+            <ul class="navItems">
+                <li><a href="#" onclick="loadPage('./assets/pages/cards1')">Home</a></li>
+                
+                <li><a href="#cards" onclick="loadPage('.assets/pages/option1')">Still-Room</a>
+                    <select id="cards">
+                        <option value="volvo"><a href="http://"></a></option>
+                        <option value="volvo"><a href="http://">ချက်အိုးများ</a></option>
+                        <option value="saab"><a href="http://">ပန်းကန်များ</a></option>
+                        <option value="opel"><a href="http://">ဇွန်ခက်ရင်းများ</a></option>
+                        <option value="audi"><a href="http://">အခြားများ</a></option>
+                    </select>
+                </li>
+                
+                <li>
+                <a href="#home" onclick="loadPage('./assets/pages/services')">Appliance</a>
+                    <select id="cards">
+                        <option value="volvo"><a href="http://"></a></option>
+                        <option value="volvo"><a href="http://">ရေမော်တာများ</a></option>
+                        <option value="saab"><a href="http://">ထင်ခုတ်ဓားများ</a></option>
+                        <option value="opel"><a href="http://">ပေါက်တူး/ပြားများ</a></option>
+                        <option value="audi"><a href="http://">တူ/ဂွကိရိယာများ</a></option>
+                    </select>
+                </li>
+                <li><a href="#" onclick="loadPage('./assets/pages/contact')">Supplies</a>
+                    <select id="cards">
+                        <option value="volvo"><a href="http://"></a></option>
+                        <option value="volvo"><a href="http://">Volvo</a></option>
+                        <option value="saab"><a href="http://">Volvo</a></option>
+                        <option value="opel"><a href="http://">Volvo</a></option>
+                        <option value="audi"><a href="http://">Volvo</a></option>
+                    </select>
+                </li>
+            </ul>
+            </nav>
+        </header>
+
+        <main class="main.container">
+            <section class="img-cont">
+                <div id="Still-Room">
+                    <img src="./assets/images/cooking tools images.jpeg" id="img" alt="Still-Room">
+                </div>
+            </section>
+
+            <section class="img-cont">
+                <div id="Appliance">
+                    <img src="./assets/images/tools images.jpeg" id="img" alt="Appliance">
+                </div>
+            </section>
+            
+            <section class="img-cont">
+                <div id="Supplies">
+                    <img src="./assets/images/ပရိက္ခရာ.jpeg" id="img" alt="Supplies">
+                </div>
+            </section>
+        </main>
+
+        
+
+      <footer class="footer">
+        <p>&copy; Created Our Depository, 2024</p>
+      </footer> 
+
+      <script src="./assets/js/script.js"></script>
+    </div>                                    
 </body>
 </html>
