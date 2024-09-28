@@ -15,3 +15,8 @@ document.getElementById('contentForm').addEventListener('submit', function(event
     // Content submission logic (This is just a placeholder)
     alert(`your abouth: ${content}`);
 });
+
+    // Delete button functionality
+document.getElementById('deleteButton').addEventListener('click', function() {
+    document.querySelector('textarea[name="content"]').value='';
+});
