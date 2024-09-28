@@ -1,26 +1,33 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} *//* Custom CSS for Search Bar and Results */
+/* Custom Styles for Inventory Management */
 
-.search-section {
+body {
     background-color: #f8f9fa;
-    padding: 50px 0;
 }
 
-#searchResults {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.navbar-brand {
+    font-weight: bold;
+}
+
+.search-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .result-item {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fdfdfd;
 }
 
-.result-item:last-child {
-    border-bottom: none;
+.result-item h5 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #e9ecef;
+    margin-top: 40px;
 }

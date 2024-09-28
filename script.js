@@ -1,32 +1,28 @@
 $(document).ready(function() {
     // Search button click event
     $('#searchBtn').click(function() {
-        let searchTerm = $('#searchInput').val();
+        let searchTerm = $('#searchInput').val().toLowerCase();
 
         if (searchTerm === "") {
             alert("Please enter an item name or ID to search.");
             return;
         }
 
-        // Call the API to search for inventory items
+        // Call the function to search for inventory items
         searchInventory(searchTerm);
     });
 
-    // Function to call API and fetch results
+    // Function to search inventory items from local JSON data
     function searchInventory(searchTerm) {
-        const apiUrl = 'https://api.example.com/search'; // Replace with actual API URL
+        $.getJSON('inventory.json', function(data) {
+            let items = data.items;
+            let filteredItems = items.filter(item => 
+                item.name.toLowerCase().includes(searchTerm) || 
+                item.id.includes(searchTerm)
+            );
 
-        $.ajax({
-            url: apiUrl,
-            type: 'GET',
-            data: { query: searchTerm },
-            success: function(response) {
-                // Process and display the search results
-                displayResults(response.items);
-            },
-            error: function() {
-                alert('Error occurred while fetching inventory data.');
-            }
+            // Display the results
+            displayResults(filteredItems);
         });
     }
 
@@ -53,11 +49,3 @@ $(document).ready(function() {
     }
 });
 
-
-// {
-//     "items": [
-//       { "id": "123", "name": "Item 1", "quantity": 10, "price": "$50" },
-//       { "id": "124", "name": "Item 2", "quantity": 5, "price": "$30" }
-//     ]
-//   }
-  
