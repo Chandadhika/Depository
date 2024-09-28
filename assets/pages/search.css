@@ -9,7 +9,7 @@ body {
 }
 
 .search-section {
-    background-color: #ffffff;
+    background-color: #3ea3fc71;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -18,9 +18,10 @@ body {
 .result-item {
     padding: 15px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #116537;
     border-radius: 5px;
-    background-color: #fdfdfd;
+    background-color: #b5c3bc24;
+    color: white;
 }
 
 .result-item h5 {
