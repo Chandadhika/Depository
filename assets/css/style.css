@@ -3,3 +3,135 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: whitesmoke;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    gap: 5px;
+    padding: 5px;
+    height: 100%; 
+    /* Full height layout */
+}
+
+.header {
+    grid-area: header;
+    background: rgb(173, 225, 230);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-container {
+    background-color: rgb(203, 175, 140);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    width: 100%;
+}
+.section {
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 7px 5px #342c2c;
+    margin: 10px;
+}
+
+#img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
+
+
+.footer {
+    grid-area: footer;
+    background: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Mobile Layout */
+@media (max-width: 750px) {
+    .main-container {
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    #img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header header header"
+            "main main"
+            "footer";
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+    }
+}
+
+@media (max-width: 999px) {
+    .main-container {
+        margin: 20px;
+        background-color: rgb(248, 191, 232);
+    }
+    #img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+    }
+}
