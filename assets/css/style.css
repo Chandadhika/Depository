@@ -67,6 +67,9 @@ body {
     display: flex;
 }
 
+.search-section {
+    display: inline;
+}
 
 .footer {
     grid-area: footer;
