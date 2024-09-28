@@ -42,7 +42,6 @@ $(document).ready(function() {
                     <h5>${item.name}</h5>
                     <p>Item ID: ${item.id}</p>
                     <p>Quantity: ${item.quantity}</p>
-                    <p>Price: ${item.price}</p>
                 </div>
             `);
         });
