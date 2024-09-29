@@ -9,6 +9,5 @@
         { "id": "7", "name": "Pumps", "quantity": 20 },
         { "id": "8", "name": "Tools", "quantity": 20 },
         { "id": "9", "name": "Hoes", "quantity": 20 }
-        
     ]
 }
