@@ -17,7 +17,7 @@
                 <li><a href="./index.html">Home</a></li>
                 
                 <li><a href="#">Still-Room</a>
-                    <select id="linkSelect">
+                    <select id="linkSelect" onchange="navigateToPage(this)">
                         <option value="choose">Choose</option>
                         <option value="./assets/pages/Plates.html">Plates</option>
                         <option value="./assets/pages/spoons.html">Spoons</option>
@@ -26,25 +26,16 @@
                 </li>
                 
                 <li><a href="#">Appliance</a>
-                    <select id="linkSelect">
-                        <option value="choose">Choose</option>
+                    <select id="linkSelect" onchange="navigateToPage(this)">
+                        <option value="">Choose</option>
                         <option value="./assets/pages/pumps.html">Pumps</option>
                         <option value="./assets/pages/spoons.html">Spoons</option>
                         <option value="./assets/pages/glass.html">Glass</option>
                     </select>
                 </li>
 
-                <!-- <li>
-                <a href="#">Appliance</a>
-                <select id="linkSelect">
-                    <option value="choose">Choose</option>
-                    <option value="./assets/pages/pumps.html">Pumps</option>
-                    <option value="./assets/pages/Hoes.html">Hoes</option>
-                    <option value="./assets/pages/tools.html">Tools</option>
-                </select>
-                </li> -->
                 <li><a href="#">Supplies</a>
-                    <select id="linkSelect">
+                    <select id="linkSelect" onchange="navigateToPage(this)">
                         <option value="choose">Choose</option>
                         <option value="https://www.google.com">Robes</option>
                         <option value="https://www.facebook.com">Umbrellas</option>
@@ -144,9 +135,9 @@
       </footer> 
     </div>
 
-    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/test1.js"></script>
-    <script src="./test/script.js"></script>
+    <script src="./assets/js/option.js"></script>
 
       <script src="./assets/js/inventory.json"></script>
     <!-- Bootstrap JS -->
