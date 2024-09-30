@@ -43,9 +43,6 @@ body {
     padding: 20px;
     justify-content: space-between;
 }
-search {
-    margin-bottom: 20px;
-}
 
 #itemList {
     list-style: none;
@@ -67,11 +64,12 @@ search {
     margin: 30px;
     width: 100%;
 }
-.main-container h3 {
+.ptext {
     color: azure;
     margin: 20px;
     padding: 20px;
     font-size: 25px;
+    width: 100%;
     align-content: center;
     justify-content: center;
     border: 1px solid rgb(209, 232, 110);
@@ -116,6 +114,9 @@ search {
         width: 250px;
         height: 250px;
     }
+    .ptext {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -130,6 +131,9 @@ search {
         flex-direction: column;
         align-items: center;
     }
+    .ptext {
+        text-align: center;
+    }
 }
 
 /* Tablet Layout */
@@ -140,6 +144,9 @@ search {
             "header header"
             "main main"
             "footer footer";
+    }
+    .ptext {
+        text-align: center;
     }
 }
 
@@ -152,7 +159,9 @@ search {
         width: 250px;
         height: 250px;
     }
-
+    .ptext {
+        text-align: center;
+    }
 }
 
 /* Desktop Layout */
@@ -163,5 +172,8 @@ search {
             "header header header"
             "main main main"
             "footer footer footer";
+    }
+    .ptext {
+        text-align: center;
     }
 }
