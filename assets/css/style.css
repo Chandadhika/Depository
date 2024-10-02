@@ -26,11 +26,17 @@ body {
 
 .header {
     grid-area: header;
-    background: rgb(173, 225, 230);
+    background: rgba(77, 156, 163, 0.544);
     padding: 20px;
     text-align: center;
     position: relative;
 
+}
+h1 {
+    font-weight: bold;
+    color: rgb(250, 250, 252);
+    font-size: 35px;
+    text-shadow: 5px 5px 3px #4d2b2b;
 }
 
 .nav ul {
@@ -39,9 +45,8 @@ body {
     gap: 20px;
     list-style: none;
     margin-top: 10px;
-    /* margin: 20px; */
-    padding: 20px;
-    justify-content: space-between;
+    padding: 15px;
+    justify-content: space-around;
 }
 
 #itemList {
@@ -52,7 +57,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(17, 2, 152);
     font-size: 1.3em;
 }
 
@@ -66,6 +71,7 @@ body {
     width: 100%;
 }
 .ptext {
+    background-color: #3c22228d;
     color: azure;
     margin: 20px;
     padding: 20px;
@@ -73,7 +79,7 @@ body {
     width: 100%;
     align-content: center;
     justify-content: center;
-    border: 1px solid rgb(209, 232, 110);
+    border: 3px solid rgb(209, 232, 110);
     border-radius: 15px;
     box-shadow: 2px 5px 3px #777;
 }
@@ -91,6 +97,7 @@ body {
     max-width: 400px;
     min-width: 200px;
     display: flex;
+    justify-content: space-around;
 }
 
 .search-section {
@@ -100,12 +107,11 @@ body {
 /* start footer styles */
 .footer {
     grid-area: footer;
-    background: rgba(15, 72, 243, 0.662);
+    background: rgba(69, 107, 220, 0.809);
+    border-radius: 15px;
     padding: 20px;
     margin: 20px;
     text-align: center;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 #footer {
     margin: 20px;
@@ -117,7 +123,8 @@ body {
     list-style: none;
 }
 #footer p {
-    color: beige;
+    color: rgb(235, 196, 4);
+    text-shadow: 2px 2px 2px #5f0d0d;
     font-size: 2rem;
     font-weight: bold;
     margin: 10px;
@@ -129,7 +136,8 @@ body {
     color: rgb(244, 249, 244);
 
     &:hover {
-        color: yellow;
+        color: rgb(200, 181, 5);
+        background-color: rgb(86, 86, 168);
     }
 }
 
@@ -160,7 +168,6 @@ body {
             "main main"
             "footer";
     }
-
     .nav ul {
         flex-direction: column;
         align-items: center;
@@ -196,10 +203,14 @@ body {
     }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 900px) {
     .main-container {
-        margin: 20px;
-        background-color: rgb(248, 191, 232);
+        margin: auto;
+        padding: 30px;
+        background-color: rgba(188, 138, 174, 0.807);
+    }
+    .container {
+        justify-items: center;
     }
     #img {
         width: 300px;
@@ -212,6 +223,12 @@ body {
 
 /* Desktop Layout */
 @media (min-width: 1024px) {
+    .main-container {
+        padding: 50px;
+        margin: auto;
+        justify-content: center;
+        justify-content: space-between;
+    }
     .container {
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-areas:
