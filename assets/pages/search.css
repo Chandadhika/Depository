@@ -18,17 +18,18 @@ body {
 .result-item {
     padding: 15px;
     margin: 10px 0;
-    border: 1px solid #116537;
-    border-radius: 5px;
-    background-color: #b5c3bc24;
+    border: 3px solid #04115a;
+    border-radius: 15px;
+    background-color: #03261524;
     color: white;
+    box-shadow: 3px 5px 2px #ac9c0a77;
 }
 
 .result-item h5 {
     margin-bottom: 10px;
 }
 
-footer {
+/* footer {
     background-color: #e9ecef;
     margin-top: 40px;
-}
+} */
