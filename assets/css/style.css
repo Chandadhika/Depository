@@ -26,11 +26,17 @@ body {
 
 .header {
     grid-area: header;
-    background: rgb(173, 225, 230);
+    background: rgba(77, 156, 163, 0.544);
     padding: 20px;
     text-align: center;
     position: relative;
 
+}
+h1 {
+    font-weight: bold;
+    color: rgb(250, 250, 252);
+    font-size: 35px;
+    text-shadow: 5px 5px 3px #4d2b2b;
 }
 
 .nav ul {
@@ -39,9 +45,8 @@ body {
     gap: 20px;
     list-style: none;
     margin-top: 10px;
-    /* margin: 20px; */
-    padding: 20px;
-    justify-content: space-between;
+    padding: 15px;
+    justify-content: space-around;
 }
 
 #itemList {
@@ -52,7 +57,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(17, 2, 152);
     font-size: 1.3em;
 }
 
@@ -66,6 +71,7 @@ body {
     width: 100%;
 }
 .ptext {
+    background-color: #3c22228d;
     color: azure;
     margin: 20px;
     padding: 20px;
@@ -73,7 +79,7 @@ body {
     width: 100%;
     align-content: center;
     justify-content: center;
-    border: 1px solid rgb(209, 232, 110);
+    border: 3px solid rgb(209, 232, 110);
     border-radius: 15px;
     box-shadow: 2px 5px 3px #777;
 }
@@ -91,6 +97,7 @@ body {
     max-width: 400px;
     min-width: 200px;
     display: flex;
+    justify-content: space-around;
 }
 
 .search-section {
@@ -100,7 +107,7 @@ body {
 /* start footer styles */
 .footer {
     grid-area: footer;
-    background: rgba(15, 72, 243, 0.662);
+    background: rgba(2, 58, 227, 0.576);
     padding: 20px;
     margin: 20px;
     text-align: center;
@@ -129,7 +136,8 @@ body {
     color: rgb(244, 249, 244);
 
     &:hover {
-        color: yellow;
+        color: rgb(200, 181, 5);
+        background-color: rgb(86, 86, 168);
     }
 }
 
@@ -160,7 +168,6 @@ body {
             "main main"
             "footer";
     }
-
     .nav ul {
         flex-direction: column;
         align-items: center;
@@ -200,6 +207,10 @@ body {
     .main-container {
         margin: 20px;
         background-color: rgb(248, 191, 232);
+    }
+    .container {
+        justify-content: space-around;
+        align-items: center;
     }
     #img {
         width: 300px;
