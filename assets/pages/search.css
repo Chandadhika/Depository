@@ -10,12 +10,13 @@ body {
 }
 
 .search-section {
-    width: 100%;
-    background-color: #0272d4c0;
+    width: 65%;
+    background-color: #773ceebe;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-right: 50px;
+    box-shadow: 5px 10px 3px rgba(0, 0, 0, 0.453);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .result-item {
@@ -23,7 +24,7 @@ body {
     margin: 10px 0;
     border: 3px solid #04115a;
     border-radius: 15px;
-    background-color: #03261524;
+    background-color: #5fb88dc4;
     color: white;
     box-shadow: 3px 5px 2px #ac9c0a77;
 }
