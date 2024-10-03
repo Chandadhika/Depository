@@ -9,15 +9,6 @@ body {
     background-color: #f8f9fa;
 }
 
-/* .navbar-brand {
-    font-weight: bold;
-} */
-.main {
-    display: flex;
-    margin: 5%;
-    padding: 5%;
-    
-}
 .search-section {
     width: 100%;
     background-color: #0272d4c0;
