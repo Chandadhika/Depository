@@ -49,6 +49,8 @@ span {
     list-style: none;
     margin-top: 10px;
     padding: 15px;
+    border-bottom: 3px solid #f002e8c5;
+    border-radius: 25px;
     justify-content: space-around;
 }
 
@@ -64,8 +66,14 @@ span {
     font-size: 1.3em;
 }
 
+.clearfix .card {
+    background-color: #2809f38c;
+}
+.clearfix .card label {
+    font-size: 1.3rem;
+}
 .main-container {
-    background-color: rgb(203, 175, 140);
+    background-color: rgba(239, 196, 147, 0.783);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -75,7 +83,7 @@ span {
     width: 100%;
 }
 .ptext {
-    background-color: #8d5707e7;
+    background-color: #15158770;
     color: azure;
     margin: 20px;
     padding: 20px;
