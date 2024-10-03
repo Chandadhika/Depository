@@ -9,7 +9,7 @@ body {
 }
 
 .search-section {
-    background-color: #3ea3fc71;
+    background-color: #4c92d071;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -29,7 +29,3 @@ body {
     margin-bottom: 10px;
 }
 
-/* footer {
-    background-color: #e9ecef;
-    margin-top: 40px;
-} */
