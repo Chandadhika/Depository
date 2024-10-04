@@ -21,7 +21,6 @@ body {
     gap: 5px;
     padding: 5px;
     height: 100%; 
-    /* Full height layout */
 }
 
 .header {
@@ -59,7 +58,6 @@ span {
     padding: 0;
 }
 
-
 .nav a {
     text-decoration: none;
     color: rgba(52, 31, 242, 0.853);
@@ -67,11 +65,12 @@ span {
 }
 
 .clearfix .card {
-    background-color: #2809f38c;
+    background-color: #346d73ad;
 }
 .clearfix .card label {
     font-size: 1.3rem;
 }
+
 .main-container {
     background-color: rgba(239, 196, 147, 0.783);
     display: flex;
@@ -109,10 +108,6 @@ span {
     min-width: 200px;
     display: flex;
     justify-content: space-around;
-}
-
-.search-section {
-    display: inline;
 }
 
 /* start footer styles */
