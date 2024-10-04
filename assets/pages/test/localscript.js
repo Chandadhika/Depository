@@ -18,5 +18,7 @@ signUpButton.addEventListener("click", function(event) {
   localStorage.setItem("user", JSON.stringify(user));
   // localStorage.getItem("user", JSON.parse(user)); //ပြန်ခေါ်သုံးတာ
   // localStorage.removeItem("user", JSON.stringify(user)); //ဖျက်ပစ်တာ
-  
+
+   // alert user that the sign up was successful
+   alert("Sign-up successful for user: " + user.userName);
 });
