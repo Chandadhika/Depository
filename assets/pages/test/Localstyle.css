@@ -10,15 +10,20 @@ body {
   background-color: #faf5d398;
 }
 
+h1 {
+  text-align: center;
+}
+
 h2 {
   font-size: 2em;
   margin: 0px;
   margin-top: 0.45em;
   margin-bottom: 0.45em;
+  text-align: center;
 }
 
 button {
-  background-color: #001b44;
+  background-color: #2a73d8d6;
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
@@ -28,12 +33,10 @@ button {
   max-width: 255px;
   padding: 20px 52px;
   text-align: center;
-  justify-content: center;
   transition-duration: 0.15s;
   transition-property: background-color;
   transition-timing-function: linear;
   margin-top: 0.6em;
-  /* float: right; */
 }
 
 .input-group {
