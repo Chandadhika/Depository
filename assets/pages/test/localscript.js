@@ -7,20 +7,29 @@ var signUpButton = document.querySelector("#sign-up");
 signUpButton.addEventListener("click", function(event) {
   event.preventDefault();
   
+  
+    var userName = userNameInput.value.trim();
+    var email = emailInput.value.trim();
+    var password = passwordInput.value.trim();
+  
+  // Check if all fields are filled
+  if (!userName || !email || !password) {
+    alert("Please fill in all the fields.");
+    return;
+  }
+
   var user = {
-    // firstName: firstNameInput.value.trim(),
-    userName: userNameInput.value.trim(),
-    email: emailInput.value.trim(),
-    password: passwordInput.value.trim()
+    userName: userName,
+    email: email,
+    password: password
   };
 
   // set new submission to local storage 
   localStorage.setItem("user", JSON.stringify(user));
-  // localStorage.getItem("user", JSON.parse(user)); //ပြန်ခေါ်သုံးတာ
-  // localStorage.removeItem("user", JSON.stringify(user)); //ဖျက်ပစ်တာ
 
    // alert user that the sign up was successful
    alert("Sign-up successful for user: " + user.userName);
 
+  //  Rederect to the Home page
    window.location.href = "./assets/pages/test/index.html";
 });
