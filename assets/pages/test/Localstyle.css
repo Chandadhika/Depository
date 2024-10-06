@@ -10,8 +10,10 @@ body {
   background-color: #faf5d398;
 }
 
-h1 {
+.head {
   text-align: center;
+  color: #032ea4c3;
+  font-weight: bold;
 }
 
 h2 {

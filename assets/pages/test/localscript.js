@@ -21,4 +21,6 @@ signUpButton.addEventListener("click", function(event) {
 
    // alert user that the sign up was successful
    alert("Sign-up successful for user: " + user.userName);
+
+   window.location.href = "./assets/pages/test/index.html";
 });
